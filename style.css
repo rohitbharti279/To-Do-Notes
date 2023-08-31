@@ -1,0 +1,120 @@
+/* Import Google Font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url(/todo-backgroung.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper {
+  max-width: 40rem;
+  padding: 1rem;
+  margin: 3rem auto;
+  background: white;
+  border-radius: 1rem;
+}
+
+.task-input input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+}
+
+.task-input input::placeholder{
+  color: #bfbfbf;
+}
+.controls, li{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.controls{
+  border-bottom: 1px solid #ccc;
+}
+.filters span{
+  margin: 0 8px;
+  font-size: 17px;
+  color: #444444;
+  cursor: pointer;
+}
+.filters span:first-child{
+  margin-left: 0;
+}
+.filters span.active{
+  color: #3C87FF;
+}
+.controls .clear-btn{
+  border: none;
+  opacity: 0.6;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 7px 13px;
+  border-radius: 4px;
+  background: linear-gradient(135deg, #1798fb 0%, #2D5CFE 100%);
+}
+.clear-btn.active{
+  opacity: 0.9;
+  pointer-events: auto;
+}
+.clear-btn:active{
+  transform: scale(0.93);
+}
+.task-box{
+  margin-top: 20px;
+  margin-right: 5px;
+  padding: 0 20px 10px 25px;
+  max-height: 16rem;
+  overflow-x:auto !important;
+  
+}
+
+.task-box .task{
+  list-style: none;
+  font-size: 17px;
+  margin-bottom: 18px;
+  padding-bottom: 16px;
+  align-items: flex-start;
+  border-bottom: 1px solid #ccc;
+}
+
+.task-box .task label{
+  display: flex;
+  align-items: flex-start;
+}
+.task label input{
+  margin-top: 7px;
+  accent-color: #3C87FF;
+}
+.task label p{
+  margin-left: 12px;
+  word-wrap: break-word;
+}
+.task label p.checked{
+  text-decoration: line-through;
+}
+
+
+@media (min-width: 1024px) {
+  .task-box{
+    max-height: 22rem;
+  }
+  
+  .wrapper {
+    margin: 5rem auto !important;
+  }
+}
+
+
+
