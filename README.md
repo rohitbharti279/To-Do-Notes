@@ -1,6 +1,9 @@
 # To-Do-Notes
 To-Do Notes - Simplify Your Task Management
 
+Deployed Link: https://strong-donut-f4c9db.netlify.app
+
+Description:
 Welcome to To-Do Notes, a straightforward task management tool to help you stay organized and productive. Keep track of your tasks with ease using our intuitive features.
 
 ## Features
